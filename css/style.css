@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin-top: 50px;
+  position: relative;
+}
+figure img {
+  width: 100%;
+}
+p {
+  font-family: "Architects Daughter", cursive;
+}
+h1 {
+  font-family: "Kirang Haerang", cursive;
+}
+section {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 2px 2px black;
+  opacity: 0;
+  transition: 1s opacity;
+}
+.car {
+  background: url(../images/car.png) no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
